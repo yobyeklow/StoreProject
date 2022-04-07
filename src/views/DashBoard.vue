@@ -1,8 +1,5 @@
 <template>
     <div id="home">
-        <section class="section">
-            <img src="@/assets/img/background.png" alt="background.jpg">
-        </section>
         <div class="content-section">
             <div class="container">
                 <div class="row">

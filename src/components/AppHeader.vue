@@ -17,6 +17,9 @@
             </div>
         </div>
     </header>
+    <section class="section">
+            <img src="@/assets/img/background.png" alt="background.jpg">
+    </section>
     <div @click="handleModalClick" class="modal_theme" ref="modal_theme"></div>
     <div @click="handleModalClick" class="main_menu" ref="main_menu">
         <div class="content_menu">
@@ -89,6 +92,11 @@ export default {
 </script>
 <style scope>
     @import "@/assets/css/form.css";
+.section img{
+    height:auto;
+    width:100%;
+    object-fit: cover;
+}
 .header-icon i{
     font-weight: 20px;
 }

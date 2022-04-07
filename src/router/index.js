@@ -8,6 +8,11 @@ const router = createRouter({
         name:'dashboard',
         component:DashBoard,
       },
+      {
+        path:'/api/register',
+        name:'register',
+        component:()=> import('@/views/Register.vue'),
+      },
   ]
 })
 
