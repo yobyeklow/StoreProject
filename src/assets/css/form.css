@@ -1,0 +1,25 @@
+.header{
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    top: 0 !important;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+}
+.header-logo img{
+    max-width:100px;
+    max-height: 100%;
+}
+.header-icon i{
+    color: rgba(15, 15, 15, 0.781);
+    cursor: pointer;
+}
+.header-icon i:nth-child(1){
+    margin-right: 20px;
+}
+.container .header-icon:last-child{
+    text-align: end;
+}
+.header-icon i{
+    font-size:1.5rem;
+}
