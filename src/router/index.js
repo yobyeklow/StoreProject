@@ -9,9 +9,14 @@ const router = createRouter({
         component:DashBoard,
       },
       {
-        path:'/api/register',
+        path:'/register',
         name:'register',
         component:()=> import('@/views/Register.vue'),
+      },
+      {
+        path:'/login',
+        name:'login',
+        component:()=> import('@/views/Login.vue'),
       },
   ]
 })

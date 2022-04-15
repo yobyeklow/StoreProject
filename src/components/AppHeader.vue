@@ -11,7 +11,9 @@
                     </router-link>
                 </div>
                 <div class="header-icon col-md-3">
-                    <i class="fa-solid fa-user"></i>
+                    <router-link to="/register">
+                        <i class="fa-solid fa-user"></i>
+                    </router-link>
                     <i class="fa-solid fa-basket-shopping"></i>
                 </div>
             </div>

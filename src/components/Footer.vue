@@ -2,7 +2,7 @@
     <div id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-xs-11 col-sm-13 col-md-12 col-lg wrapbox-content d-flex flex-wrap justify-content-center">
                     <div class="footer-logo">
                         <img src="@/assets/img/logo.png" alt="logo.png">
                     </div>
@@ -14,7 +14,7 @@
                         
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg wrapbox-address">
                     <div class="contact ">
                         <div class="footer-title">
                             <h4>ShoesStore - Offical</h4>
@@ -47,6 +47,7 @@ export default {
 <style scoped>
 #footer{
     background:rgba(204, 204, 204, 0.466);
+    height: auto;
 }
 .cointainer .row{
     position:relative;
@@ -57,12 +58,19 @@ export default {
     top:0;
     transform: translateX(50%) translateY(50%);
 }
+
 .footer-logo img{
     max-width: 100%;
 }
+.footer-content,.footer-address{
+    max-width:100%;
+}
 .footer-content p{
-    text-align: justify;
+    text-align:justify;
     line-height: 1.5rem;
+    padding:0 10px;
+    white-space: normal;
+    overflow: hidden;
 }
 .footer-title h4{
     text-transform: uppercase;
@@ -74,4 +82,10 @@ export default {
 .footer-address ul i{
     margin-right: 5px;
 }
+@media (max-width: 576px) {
+    .contact{
+        transform: translateX(25%) translateY(50%);
+    }
+   
+ }
 </style>

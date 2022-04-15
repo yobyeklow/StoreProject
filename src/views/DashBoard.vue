@@ -87,6 +87,8 @@ export default {
     transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     vertical-align: middle;
+    object-fit: cover;
+    border-radius: 15px;
 }
 .item-shop:nth-child(1) img{
     height:525px;
@@ -95,5 +97,8 @@ export default {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     cursor: pointer;
+}
+@media screen {
+    
 }
 </style>

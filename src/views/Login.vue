@@ -1,71 +1,74 @@
 <template>
-    <div id='register'>
+    <div id='login'>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="register_title">
+                <div class="col-md-12 col-lg wrapbox_heading">
+                    <div class="header_page">
                         <h3>Đăng nhập</h3>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <form action="" class="register_form">
-                        <div class="register-container">
-                            <div class="form-item">
-                                <span>Email:</span>
-                                <input type="text" name="Name" id="username">
+                <div class="col-md-12 col-lg wrapbox_content">
+                    <div class="form_account">
+                        <form action="" accept-charset="UTF-8">
+                            <div class="last_name clearfix large_form" >
+                                <input type="email" placeholder="Email" id="email">
                             </div>
-                            <div class="form-item">
-                                <span>Mật khẩu:</span>
-                                <input type="password" name="password" id="password">
+                            <div class="first_name clearfix large_form">
+                                <input type="password" placeholder="Mật khẩu" id="password">
                             </div>
-                           
-                            <button class="btn form-item">
-                                Đăng nhập
-                            </button>
-                        </div>
-                        
-                    </form>
+                            <div class="register_btn clearfix justify-content-center">
+                                <input class="btn" type="submit" value="Đăng nhập">
+                                <div class="register_pass">
+                                    hoặc
+                                    <a href="/api/register">Đăng ký</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <style scoped>
-#register{
-    height:600px;
-    position:relative;
+.wrapbox_heading{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:80vh;
+    border-right:1px solid #ccc;
 }
-.container {
-    position:absolute;
-    top: 120px;
-    right:2px;
+.header_page h3{
+    font-size: 40px;
+    font-weight: 700;
 }
-.register_title{
-    height:296px;
-    border-right:1px solid black;
+.header_page:after{
+    content: "";
+    background: #000;
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin-top: 70px;
 }
-.row .register_title h3{
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    top:100px;
+.wrapbox_content{
+    padding: 120px 60px;
 }
-.register_form{
-    text-align: center;
-    background-color: rgba(204, 204, 204, 0.541);
-    border-radius: 10px;
-    width:400px;
-    margin-left:20px;
+.large_form{
+    margin-bottom: 30px;
 }
-
-.form-item{
-    padding:15px 0px;
+.form_account input[type='email'],
+.form_account input[type='password']{
+    width:100%;
+    padding:0 20px;
+    height: 55px;
+    border: 1px solid transparent;
+    background: #ccc;
+    color:#000
 }
-.form-item:last-child{
-    padding-bottom: 10px;
-}
-.form-item input{
-    margin-left:10px;
-  
+.btn{
+    background-color: black;
+    color:white;
+    padding:15px 30px;
+    border:1px solid transparent;
 }
 </style>
