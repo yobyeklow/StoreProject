@@ -1,11 +1,11 @@
 import createApiClient from "./api.service"
 
-class ContactService {
+class ProductService {
     constructor(baseUrl = "/api") {
         this.api = createApiClient(baseUrl);
     }
     async getAll() {
-        return (await this.api.get("/")).data;
+        return (await this.api.get("/items/")).data;
     }
     async create(data) {
         return (await this.api.post("/user/register", data)).data;
@@ -24,4 +24,4 @@ class ContactService {
     }
 }
 
-export default new ContactService();
+export default new ProductService();

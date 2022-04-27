@@ -1,4 +1,7 @@
 <template>
+    <section class="section">
+            <img src="@/assets/img/background.png" alt="background.jpg">
+    </section>
     <div id="home">
         <div class="content-section">
             <div class="container">
@@ -32,8 +35,16 @@
 </template>
 
 <script>
+import AppHeader from '@/components/AppHeader.vue'
 export default {
-    
+    data(){
+        return{
+
+        }
+    },
+    components:{
+        AppHeader,
+    }
 }
 </script>
 <style scope>

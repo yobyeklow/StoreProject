@@ -18,6 +18,11 @@ const router = createRouter({
         name:'login',
         component:()=> import('@/views/Login.vue'),
       },
+      {
+        path:'/shop/nike',
+        name:'nikeproduct',
+        component:()=> import('@/views/NikeProduct.vue'),
+      }
   ]
 })
 

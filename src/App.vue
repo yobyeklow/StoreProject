@@ -3,12 +3,15 @@ import { RouterLink, RouterView } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
 import Footer from '@/components/Footer.vue'
 </script>
-
 <template>
   <div id="app">
-    <AppHeader/>
-    <router-view></router-view>
-    <Footer/>
+    <keep-alive>
+      <AppHeader/>
+    </keep-alive>
+      <router-view>
+      </router-view>
+      <Footer/>
+        
   </div>
 
 </template>

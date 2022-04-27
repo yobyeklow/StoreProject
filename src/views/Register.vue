@@ -1,4 +1,7 @@
 <template>
+  <section class="section">
+            <img src="@/assets/img/background.png" alt="background.jpg">
+  </section>
   <div id="register">
     <div class="container-fluid">
       <div class="row">
@@ -62,7 +65,7 @@
   </div>
 </template>
 <script>
-import ContactService from "../services/contact.service";
+import UserService from "../services/user.service";
 import * as yup from "yup";
 import { Form, Field, ErrorMessage } from "vee-validate";
 export default {
@@ -111,14 +114,14 @@ export default {
   methods: {
     async CreateAccount() {
       try {
-            await ContactService.create(this.registerUser)
+            await UserService.create(this.registerUser)
             .then((data)=>{
                 console.log(data);
             })
             .catch((data)=>{
                 console.log(data);
             })
-        console.log(data);
+     
       } catch (err) {
         console.log(err);
       }
@@ -132,6 +135,11 @@ export default {
 };
 </script>
 <style scoped>
+.section img{
+    height:auto;
+    width:100%;
+    object-fit: cover;
+}
 .wrapbox_heading {
   display: flex;
   align-items: center;
