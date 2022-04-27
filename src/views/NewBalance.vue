@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row">
         <div class="main_container col-md-12 col-lg-12 py-3">
-          <h3 class="text-center title_product">Nike Product</h3>
+          <h3 class="text-center title_product">NewBalance Product</h3>
           <div class="category_product">
             <div class="product_list row">
               <div
@@ -48,7 +48,6 @@
   </div>
 </template>
 <script>
-import AppHeader from "@/components/AppHeader.vue";
 import ProductService from "../services/product.service";
 import CartService from "../services/cart.service";
 export default {

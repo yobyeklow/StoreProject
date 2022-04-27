@@ -25,7 +25,7 @@
                                 <input  class="btn" type="submit" value="Đăng nhập">
                                 <div class="register_pass">
                                     hoặc
-                                    <a href="/api/register">Đăng ký</a>
+                                    <a href="/register">Đăng ký</a>
                                 </div>
                             </div>
                         </form>
